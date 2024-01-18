@@ -2,10 +2,51 @@
 
 //1) Define and initialize the arrays specified in the exercise to hold the name, chemical symbol and mass for different elements.
 
+let element1 = ['hydrogen', 'H', 1.008];
+let element2 = ['helium', 'He', 4.003];
+let element26 = ['iron', 'Fe', 55.85];
+
 //2) Define the array 'table', and use 'push' to add each of the element arrays to it. Print 'table' to see its structure.
+
+let table = [];
+table.push(element1);
+table.push(element2);
+table.push(element26);
+console.log(table);
 
 //3) Use bracket notation to examine the difference between printing 'table' with one index vs. two indices (table[][]).
 
+console.log(table[1]);
+console.log(table[1][1]);
+
 //4) Using bracket notation and the table array, print the mass of element1, the name for element 2 and the symbol for element26.
 
+console.log(table[0][2]);
+console.log(table[1][0]);
+console.log(table[2][1]);
+
 //5) 'table' is an example of a 2-dimensional array. The first “level” contains the element arrays, and the second level holds the name/symbol/mass values. Experiment! Create a 3-dimensional array and print out one entry from each level in the array.
+
+let football = ['Patty Pat Pat', 'Pacheco', 'Kelce'];
+let singers = ['Beyonce', 'JB', 'T Swizzle'];
+let dogs = ['Max', 'Winston', 'Riley'];
+
+let faves = []
+faves.push(football);
+faves.push(singers);
+faves.push(dogs);
+console.log(faves);
+
+let footballLoathe = ['Mr.Cool Joe Burrow', 'Eli Apple', 'Zac Taylor'];
+let singersLoathe = ['Morgan Wallen', 'JT', 'Jelly Roll'];
+let dogsLoathe = ['Daisy', 'Meadow', 'Chop'];
+
+let loathes = []
+loathes.push(footballLoathe);
+loathes.push(singersLoathe);
+loathes.push(dogsLoathe);
+console.log(loathes);
+
+faves.push(loathes);
+console.log(faves);
+
