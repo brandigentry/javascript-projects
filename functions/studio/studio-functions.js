@@ -2,6 +2,17 @@
 
 // Part One: Reverse Characters
 
+let string1 = 'apple';
+let string2 = 'potato';
+let string3 = 'Capitalized Words';
+
+
+function reverseCharacters(strToReverse){
+    return strToReverse.split('').reverse().join('');
+}
+let reversedStr = '';
+console.log(reverseCharacters(string1));
+
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
 // 2. Within the function, split the string into an array, then reverse the array.
 // 3. Use join to create the reversed string and return that string from the function.
@@ -10,6 +21,20 @@
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
 
 // Part Two: Reverse Digits
+
+let string4 = 12345;
+let string5 = 6789;
+
+function reverseCharacters(strToReverse){
+    if (typeof(strToReverse) === "number"){
+    return Number(strToReverse.toString().split('').reverse().join(''));
+    } else if (typeof(strToReverse) === "string"){
+    return strToReverse.split('').reverse().join('');
+    }
+    }
+   
+// let reversedStr = '';
+console.log(reverseCharacters(string4));
 
 // 1. Add an if statement to reverseCharacters to check the typeof the parameter.
 // 2. If typeof is ‘string’, return the reversed string as before.
